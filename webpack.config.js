@@ -7,8 +7,7 @@ module.exports = {
   output: { path: __dirname, filename: 'build/bundle.js' },
   module: {
     loaders: [
-    	{ test: /\.(jpg|png)$/, loader: 'url?limit=25000' },
-    	{ test: /\.scss$/, loader: "style!css!sass" },
+    	{ test: /\.css$/, loader: "style!css" },
       {
         test: /.jsx?$/,
         loader: 'babel-loader',
